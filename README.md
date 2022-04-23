@@ -41,7 +41,7 @@ Example:
 * Sending a GET request to /vessel-possitions will return a list of all VesselPossition objects that have been cached.
 
 The last GET endpoint is mapped to /vessel-positions/{vesselName}
-Sending a GET request to /vessel-positions/{vesselName} will return a list of all VesselPosition objects that contain a vessel with the given vesselName.
+* Sending a GET request to /vessel-positions/{vesselName} will return a list of all VesselPosition objects that contain a vessel with the given vesselName.
 
 NOTE: the "date" and "receivedDate" attributes are expected to be in the following formats: "dd-MM-yyyy'T'HH:mm:ss a z"
 Example date: "21-04-2022T13:46:51 PM GMT"
