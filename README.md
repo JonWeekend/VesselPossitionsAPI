@@ -5,6 +5,7 @@ Created with Spring Boot.
 
 The API takes in a json object (VesselPossition) which contains a vessel object and a position object.
 Example:
+´´´
   {
     "vessel": {
       "name": vesselName (string),
@@ -17,7 +18,7 @@ Example:
       “speed”: speedKnots (number)
     }
   }
-
+´´´
 The API can take POST and GET requests.
 The POST and the first GET endpoints are mapped to /vessel-positions.
 
