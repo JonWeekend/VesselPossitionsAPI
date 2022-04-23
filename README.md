@@ -5,7 +5,7 @@ Created with Spring Boot.
 
 The API takes in a json object (VesselPossition) which contains a vessel object and a position object.
 Example:
-´´´
+```
   {
     "vessel": {
       "name": vesselName (string),
@@ -18,12 +18,13 @@ Example:
       “speed”: speedKnots (number)
     }
   }
-´´´
+```
 The API can take POST and GET requests.
 The POST and the first GET endpoints are mapped to /vessel-positions.
 
 * Sending a POST request to /vessel-positions will cache and return an altered VesselPossition object with a new attribute; "receivedDate", which is the date when the endpoint received the object. As well as converting the latitude and longitude from degrees to radians and the speed from knots to meters per second.
 Example:
+```
   {
     "vessel": {
       “name“: vesselName (string)
@@ -36,7 +37,7 @@ Example:
       “speed”: speedMetersPerSeconds (number)
     }
   }
-
+```
 * Sending a GET request to /vessel-possitions will return a list of all VesselPossition objects that have been cached.
 
 The last GET endpoint is mapped to /vessel-positions/{vesselName}
